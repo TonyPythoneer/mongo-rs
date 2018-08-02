@@ -1,0 +1,43 @@
+version: "3"
+
+services:
+  mongo1:
+    image: mongo:3.6.6-jessie
+    volumes:
+      - "./keys:/keys"
+      - "./settings:/settings"
+      - "./scripts:/scripts"
+      - "./services/mongo1/data/db:/data/db"
+    ports:
+      - "30001:27017"
+    networks:
+      - mongo-rs
+    command: /scripts/start-no-auth.sh
+  mongo2:
+    image: mongo:3.6.6-jessie
+    volumes:
+      - "./keys:/keys"
+      - "./settings:/settings"
+      - "./scripts:/scripts"
+      - "./services/mongo2/data/db:/data/db"
+    ports:
+      - "30002:27017"
+    networks:
+      - mongo-rs
+    command: /scripts/start-no-auth.sh
+  mongo3:
+    image: mongo:3.6.6-jessie
+    volumes:
+      - "./keys:/keys"
+      - "./settings:/settings"
+      - "./scripts:/scripts"
+      - "./services/mongo3/data/db:/data/db"
+    ports:
+      - "30003:27017"
+    networks:
+      - mongo-rs
+    command: /scripts/start-no-auth.sh
+
+
+networks:
+  mongo-rs:
