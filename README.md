@@ -21,7 +21,7 @@ References:
 
 * [認證啟動](https://docs.mongodb.com/manual/tutorial/enable-authentication/)
 * [deploy-replica-set](https://docs.mongodb.com/manual/tutorial/deploy-replica-set/)
-* [Deploy New Replica Set With Keyfile Access Control](https://docs.mongodb.com/manual/tutorial/deploy-replica-set/)
+* [Deploy New Replica Set With Keyfile Access Control](https://docs.mongodb.com/manual/tutorial/enforce-keyfile-access-control-in-existing-replica-set/)
 * [security-built-in-roles](https://docs.mongodb.com/manual/core/security-built-in-roles/)
 * [mongodump](https://docs.mongodb.com/manual/tutorial/backup-and-restore-tools/#basic-mongodump-operations)
 * [mongorestore](https://docs.mongodb.com/manual/tutorial/backup-and-restore-tools/#restore-a-database-with-mongorestore)
